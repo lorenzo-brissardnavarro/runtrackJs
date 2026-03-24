@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+    color: black;
+    text-align: center;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}

@@ -1,4 +1,6 @@
-function showide(){
+let bool = false; 
+
+function showhide(){
     const main = document.getElementById("main");
     if(bool === false){
         const article = document.createElement("article");
@@ -7,8 +9,9 @@ function showide(){
         main.appendChild(article);
     } else {
         let article = document.getElementById("article");
-        article.remove();
+        if (article) {
+            article.remove();
+        }
     }
     bool = !bool;
 }
-let bool = false; 
