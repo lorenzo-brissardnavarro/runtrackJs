@@ -9,7 +9,9 @@ button.addEventListener("click", () => {
         return response.text();
     })
     .then(data => {
-        console.log(data);
+        const p = document.createElement("p");
+        p.textContent = data;
+        document.body.appendChild(p);
     })
     .catch(error => {
         console.error('Erreur:', error);
