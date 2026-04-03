@@ -52,3 +52,10 @@ form.addEventListener("submit", (e) => {
         }
     }, 1000);
 });
+
+const toggleBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('mobile-menu');
+
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});

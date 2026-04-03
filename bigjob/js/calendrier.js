@@ -77,3 +77,17 @@ function init() {
 
 demandeBtn.addEventListener("click", makeRequest);
 window.addEventListener("load", init);
+
+
+const toggleBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('mobile-menu');
+
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
+const logoutBtn = document.getElementById('logout-btn');
+logoutBtn.addEventListener('click', () => {
+    localStorage.removeItem("currentUser");
+    window.location.href = "connexion.html";
+});

@@ -96,3 +96,11 @@ form.addEventListener("submit", (e) => {
     }
 
 });
+
+
+const toggleBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('mobile-menu');
+
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});

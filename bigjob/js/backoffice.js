@@ -127,3 +127,17 @@ function ChangeRole(email) {
 
 window.addEventListener("load", updateBackofficeTable);
 window.addEventListener("load", updateRightsTable);
+
+
+const toggleBtn = document.getElementById('menu-btn');
+const menu = document.getElementById('mobile-menu');
+
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+});
+
+const logoutBtn = document.getElementById('logout-btn');
+logoutBtn.addEventListener('click', () => {
+    localStorage.removeItem("currentUser");
+    window.location.href = "connexion.html";
+});
